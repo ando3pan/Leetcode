@@ -28,5 +28,6 @@ class Solution{
     return result.reverse().toString();
 //when showing the list after, we do a reverse on the array to show the number
 //in the proper order as well as having to convert it to a string
+//remember the reverse and toString commands
   }
 }
