@@ -30,6 +30,7 @@ class solution{
       paths.add(path);
       return;
     }
+  //using recursion, we call this command again until the return is satisfied
   //if its the end of the path, you finally send back the completed path
     if(root.left != null){
       dfs(root.left,path + "->",paths);
