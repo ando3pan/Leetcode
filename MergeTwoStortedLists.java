@@ -34,6 +34,7 @@ class Solution{
   //same thing, but with other list
       }
     }
-    return head;
+    return head.next;
+  //save out reference to the list
   }
 }
