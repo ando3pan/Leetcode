@@ -5,7 +5,7 @@ class Solution{
 //aaa becomes a,3
     Hashmap<Character,Integer> counts = new HashMap<>();
     for(char c:magazine.toCharArray()){
-      counts.put(c , count.getOrDefault(c,0)+1)
+      counts.put(c , counts.getOrDefault(c,0)+1)
 //either store c cus its the first time we see import junit.framework.TestCase;
 //or we increment the key with a count of 1
 //in the for, we run the updated hashmap eachtime
