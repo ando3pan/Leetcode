@@ -26,7 +26,10 @@ class Solution{
     if (s==null || t==null){
 //if either are null, they both have to be, so for the tree we have
 //they can not have any more branches
+//we just want to check in the beginning incase
+//if the subtree we want ot compare is empty and the list is empty, its technically matching
       return s == null && t == null;
+//return conditional for specifically that case
     }else if(s.val == t.val){
 //comparison operation to match the leading tree
       return isSametree(s.left,t.left) && isSameTree(s.right,t.right);
