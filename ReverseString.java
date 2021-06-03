@@ -1,4 +1,4 @@
-class Solution{
+public class Solution{
   public String Reverse(String s){
     char[] characters = s.toCharArray())
     int i = 0
