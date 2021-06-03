@@ -12,7 +12,7 @@ public class Solution extends Relation{
   public int findCelebrity(int n){
     int candidate = 0;
 //container for the return
-    for(int i = 1; i < n;i++){
+    for(int i = 1; i < n; i++){
       if(knows(candidate,i)){
         candidate = i;
       }
@@ -30,14 +30,5 @@ public class Solution extends Relation{
       }
     }
     return candidate;
-  }
-}
-
-
-
-
-
-
-
   }
 }
