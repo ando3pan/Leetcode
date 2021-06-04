@@ -17,7 +17,7 @@ class Solution{
 // we increment the index of the letter in s whenever we encounter it
 // we decrement the index of the letter in t whenever we encounter it
     for(int i:counts){
-      if {i != 0}{
+      if (i != 0){
         return false;
       }
 //simple 0 checker
