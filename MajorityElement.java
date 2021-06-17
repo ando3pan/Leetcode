@@ -7,7 +7,7 @@ class Solution{
     HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
     for(int i: nums){
       if(map.containsKey(i) && map.get(i) + 1 > nums.length/2){
-        return 1;
+        return i;
 //main checking algo --> if the map char is present and its value > n/2
       }else{
 //if not, then the value is not present or not large eneough when it was encountered
