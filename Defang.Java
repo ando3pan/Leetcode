@@ -4,7 +4,7 @@ class Solution{
     for(int i = 0; i < address.length();i++){
       char current = address.charAt(i);
       if (current == '.'){
-        result.append("[.]")
+        result.append("[.]");
       }else{
         result.append(current);
       }

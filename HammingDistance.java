@@ -9,5 +9,6 @@ class Solution{
 //bitwise shift operation so we can move to the next set of bits
 //in this case we've taken care of the 1's place, now moving to 2's.. then 4's... then 8's
     }
+    return result;
   }
 }

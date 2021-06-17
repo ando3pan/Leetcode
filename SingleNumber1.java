@@ -1,6 +1,6 @@
-class Solution{
-  public int singleNumber(int [] nums){
-    Hashset<Integer> set = new Hashset<Integer>();
+class Solution {
+  public int singleNumber(int[] nums) {
+    HashSet<Integer> set = new HashSet<Integer>();
     for(int i: nums){
       if(set.contains(i)){
         set.remove(i);

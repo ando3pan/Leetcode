@@ -11,8 +11,8 @@ class Solution{
         int stoneOne = -maxHeap.remove();
         int stoneTwo = -maxHeap.remove();
 //each loop we start by removing the first two heap entries
-        if (stoneOne != StoneTwo){
-          maxHeap.add(-(stoneOne - stoneTwo))
+        if (stoneOne != stoneTwo){
+          maxHeap.add(-(stoneOne - stoneTwo));
 //we then add the difference using the values we just removed
 //we have to add the negative value of the difference when doing a max heap
         }

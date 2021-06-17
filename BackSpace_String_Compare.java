@@ -4,7 +4,7 @@ public Solution{
     for(char c: S.toCharArray()){
       if(c != '#'){
         sStack.push(c);
-      }else(if !sStack.isEmpty()){
+      }else if(!sStack.isEmpty()){
         sStack.pop();
       }
     }
@@ -12,7 +12,7 @@ public Solution{
     for(char c: T.toCharArray()){
       if(c != '#'){
         tStack.push(c);
-      }else(if !tStack.isEmpty()){
+      }else if (!tStack.isEmpty()){
         tStack.pop();
       }
     }
@@ -21,7 +21,7 @@ public Solution{
 //empty out the stacks to compare until they are empty
       char current = sStack.pop();
       if(tStack.isEmpty() || tStack.pop() != current){
-        return false
+        return false;
       }
     }
     return sStack.isEmpty() && sStack.isEmpty();

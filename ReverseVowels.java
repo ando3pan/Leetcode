@@ -1,5 +1,5 @@
-class Solution{
-  public String ReverseVowels(String s){
+class Solution {
+  public String reverseVowels(String s) {
     Set<Character> vowels = new HashSet<>();
     vowels.add('A');
     vowels.add('a');
@@ -12,7 +12,7 @@ class Solution{
     vowels.add('U');
     vowels.add('u');
 //make a hashset of Characters with all the Upper and lowercase ReverseVowels
-    char characters = s.toCharArray();
+    char[] characters = s.toCharArray();
 //make a character array with the string input
     int i = 0;
     int j = s.length() - 1;
@@ -20,11 +20,11 @@ class Solution{
     while(i < j){
 //conditional where we are traversing toward the center
       while(i < j && !vowels.contains(characters[i])){
-        i++
+        i++;
 //while loop continues unless it encounters a vowel then the outside function executes
       }
       while(i < j && !vowels.contains(characters[j])){
-        j--
+        j--;
 //while function loop continues until it encounters a vowel, then outside function executes
       }
 //when a vowel is found, then we store i into temp

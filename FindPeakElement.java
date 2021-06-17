@@ -10,7 +10,7 @@ class Solution{
     while(left < right){
       int mid = left + (right - left) / 2;
 //don't want to have potential overflow on a large list
-      if(num[mid] < nums[mid + 1]){
+      if(nums[mid] < nums[mid + 1]){
 //sorted, we know it's a peak if the element is less than the right
         left = mid + 1;
 //we set the left equal to the number that was greater and do Binary Search again

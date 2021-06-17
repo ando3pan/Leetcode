@@ -22,7 +22,7 @@ class Solution{
 //if the cookie is still too small i.e s < g, we go to the next child
       }
     }
-    return contentChildren
+    return contentChildren;
 //after looping through, we return the counter at the end of the loops
   }
 }

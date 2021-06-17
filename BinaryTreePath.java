@@ -14,7 +14,7 @@ class solution{
       return paths;
     }
 //run function to update paths to return to here
-    dfs(root,"",paths)
+    dfs(root,"",paths);
 //call function with input parameters
     return paths;
   }

@@ -1,7 +1,7 @@
 class Solution{
   public int totalFruit(int[]tree){
 //start with error checking --> null values or only 1 fruit
-    if(tree == null || tree == 0){
+    if(tree == null){
       return 0;
     }
     int max = 1;
@@ -24,7 +24,7 @@ class Solution{
         i = min + 1;
         map.remove(tree[min]);
       }
-      max = Math.max(max,j - i)
+      max = Math.max(max,j - i);
     }
     return max;
   }

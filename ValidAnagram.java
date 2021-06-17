@@ -1,5 +1,5 @@
-class Solution{
-  public boolean isAnagram(String s, String t){
+class Solution {
+  public boolean isAnagram(String s, String t) {
     if(s.length() != s.length()){
 //they have to be same length
       return false;
@@ -22,6 +22,6 @@ class Solution{
       }
 //simple 0 checker
     }
-
+    return true;
   }
 }

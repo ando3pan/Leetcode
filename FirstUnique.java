@@ -16,7 +16,7 @@ class Solution{
       }
     int min = Integer.MAX_VALUE;
 
-    for(char c: maps.keySet()){
+    for(char c: map.keySet()){
       if(map.get(c) > -1 && map.get(c) < min){
         min = map.get(c);
       }

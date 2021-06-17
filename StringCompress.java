@@ -1,5 +1,5 @@
-class Solution{
-  public int compress(chars){
+class Solution {
+  public int compress(char[] chars) {
     int index = 0;
     int i = 0;
 //Initialize index to keep track
@@ -10,7 +10,7 @@ class Solution{
         int j = i;
 //set another pointer to keep track of how many times each char occurs
         while(j < chars.length && chars[j] == chars[i]){
-          j++
+          j++;
         }
 //have another loop going that increments and checks how many times the char occurs
         chars[index++] = chars[i];

@@ -16,13 +16,13 @@ class Solution{
     return numBattleships;
   }
   public void sink(char[][] board, int i, int j){
-    if(i < 0 || i >= board.length || j < 0 || j >= board.lenght || board[i][j] != 'X'){
+    if(i < 0 || i >= board.length || j < 0 || j >= board.length || board[i][j] != 'X'){
       return;
     }
 //if out of bounds or encounters a non-X, then we do nothing
     board[i][j] = '.';
     sink(board,i+1,j);
-    sink(board,i-1,j)
+    sink(board,i-1,j);
     sink(board,i,j+1);
     sink(board,i,j-1);
 //we get rid of the current so it doesnt recurse infinitely, then we do the operations on all neighbors
