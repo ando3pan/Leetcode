@@ -1,6 +1,6 @@
 class Solution {
   public boolean isAnagram(String s, String t) {
-    if(s.length() != s.length()){
+    if(s.length() != t.length()){
 //they have to be same length
       return false;
     }
