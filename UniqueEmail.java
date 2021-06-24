@@ -1,6 +1,7 @@
 class Solution{
   public int numUniqueEmails(String[] emails){
     HashSet<Strings> set = new HashSet<>();
+//return variable where we hold all of our values
     for(String email: emails){
       StringBuilder address = new StringBuilder();
       for(int i = 0; i < email.length(); i++){
