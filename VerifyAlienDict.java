@@ -1,6 +1,6 @@
 class Solution{
   public boolean isAlienSorted(String words, String order){
-    int alphabet = new int[26];
+    int[] alphabet = new int[26];
 //make an integer array to
     for (int i = 0; i < order.length(); i++){
         alphabet[order.charAt(i) - 'a'] = i;
